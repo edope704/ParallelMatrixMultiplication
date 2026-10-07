@@ -1,10 +1,8 @@
 #include <sys/resource.h>
 
 #include <chrono>
-#include <cmath>
 #include <cstddef>
 #include <cstdlib>
-#include <iostream>
 #include <random>
 #include <vector>
 
@@ -59,7 +57,7 @@ int main( int argc, char** argv ) {
   const size_t MATRIX_SIZE{ 500 };
   const uint8_t N_SAMPLES{ 5 };
 
-  std::printf( "* Initializing matrixes of size %d*%d with values in range [-%d,%d]*\n\n",
+  std::printf( "* Initializing matrixes of size %ul*%ul with values in range [-%d,%d]*\n\n",
                MATRIX_SIZE, MATRIX_SIZE, VALUES_RANGE, VALUES_RANGE );
 
   matrix_int8_t A( MATRIX_SIZE * MATRIX_SIZE ), B( MATRIX_SIZE * MATRIX_SIZE );
