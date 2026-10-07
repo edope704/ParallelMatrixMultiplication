@@ -104,7 +104,8 @@ int main( int argc, char** argv ) {
 
     omp_time += std::chrono::duration<double, std::milli>( t2 - t1 ).count();
   }
-  std::printf( "Time needed (ms): %.2f\n\n", ( omp_time / Config::N_SAMPLES ) );
+
+  std::printf( "Avarage time needed (ms): %.2f\n\n", ( omp_time / Config::N_SAMPLES ) );
 
   std::printf( "Total speedup (%): %.2f\n\n", ( single_thread_time / omp_time * 100 ) );
 
