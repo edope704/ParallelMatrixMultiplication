@@ -4,7 +4,7 @@ A C++ project demonstrating the performance improvements of matrix multiplicatio
 
 ## Prerequisites
 
-- C++23 compatible compiler
+- C++11 compatible compiler
 - CMake 3.12 or higher
 - OpenMP
 
